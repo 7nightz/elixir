@@ -1,4 +1,14 @@
-entrypoint = "README.md"
-language = "nodejs"
+language = "nix"
 run = ["npm", "install"]
 run = ["npm", "start"]
+
+[packager]
+language = "nodejs-npm"
+
+[nix]
+channel = "stable-22_05"
+
+[debugger]
+
+[unitTest]
+language = "nodejs"
